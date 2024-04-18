@@ -10,6 +10,7 @@ const initialState = {
   token: null,
   username: null,
   notes: null,
+
   new: {
     title: "",
     body: "",
@@ -32,8 +33,6 @@ const initialState = {
     title: "",
     body: "",
   },
-
-  
 };
 
 ///////////////////////

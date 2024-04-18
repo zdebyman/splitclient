@@ -15,7 +15,7 @@ export const App = (props) => {
     const auth = JSON.parse(window.localStorage.getItem("auth"));
     if (auth) {
       dispatch({ type: "auth", payload: auth });
-      props.history.push("/dashboard");
+      props.history.push("/expenses/new");
     } else {
       props.history.push("/");
     }
