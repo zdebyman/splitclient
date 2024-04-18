@@ -1,5 +1,5 @@
 import React from "react";
-import { useAppState } from "../AppState.jsx";
+import { useAppState } from "../AppState.tsx";
 
 const ExpenseForm = (props) => {
   const { state, dispatch } = useAppState();
@@ -132,7 +132,7 @@ const ExpenseForm = (props) => {
           </div>
         ))}
 
-        <button type="btn add-btn" onClick={() => {
+        <button type="button" onClick={() => {
           setFormData({
             ...formData,
             splits_attributes: [...formData.splits_attributes, { payee: "", amount: "" }]

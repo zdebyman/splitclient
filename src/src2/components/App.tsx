@@ -1,13 +1,13 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import Nav from "./Nav.jsx";
-import Home from "../pages/Home.jsx";
-import Auth from "../pages/Auth.jsx";
-import Dashboard from "../pages/Dashboard.jsx";
-import Users from "../pages/Users.jsx";
-import User from "../pages/User.jsx";
-import ExpenseForm from "./ExpenseForm.jsx";
-import { useAppState } from "../AppState.jsx";
+import Nav from "./Nav.tsx";
+import Home from "../pages/Home.tsx";
+import Auth from "../pages/Auth.tsx";
+import Dashboard from "../pages/Dashboard.tsx";
+import Users from "../pages/Users.tsx";
+import User from "../pages/User.tsx";
+import ExpenseForm from "./ExpenseForm.tsx";
+import { useAppState } from "../AppState.tsx";
 
 export const App = (props) => {
   const { state, dispatch } = useAppState();

@@ -1,5 +1,5 @@
 import React from "react";
-import { useAppState } from "../AppState.jsx";
+import { useAppState } from "../AppState.tsx";
 import { useParams } from "react-router-dom";
 
 const User = (props) => {

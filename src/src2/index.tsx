@@ -3,7 +3,7 @@ import ReactDom from "react-dom";
 import "./styles.css";
 import { App } from "./components/App";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import { AppState } from "./AppState.jsx";
+import { AppState } from "./AppState.tsx";
 
 ReactDom.render(
   <AppState>

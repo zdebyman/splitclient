@@ -1,5 +1,5 @@
 import React from "react";
-import { useAppState } from "../AppState.jsx";
+import { useAppState } from "../AppState.tsx";
 
 const Form = (props) => {
   const { state, dispatch } = useAppState();
