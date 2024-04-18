@@ -19,8 +19,11 @@ const Dashboard = (props) => {
   };
 
   React.useEffect(() => {
+    if (!token) {
+      return
+    }
     getNotes();
-  }, []);
+  }, [token]);
 
   const loaded = () => {
     return (
