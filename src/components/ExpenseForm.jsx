@@ -35,7 +35,7 @@ const ExpenseForm = (props) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     actions[action]().then((data) => {
-      props.history.push("/expenses/new");
+      props.history.push("/balances");
     });
   };
 
@@ -132,7 +132,7 @@ const ExpenseForm = (props) => {
           </div>
         ))}
 
-        <button type="btn add-btn" onClick={() => {
+        <button type="button" onClick={() => {
           setFormData({
             ...formData,
             splits_attributes: [...formData.splits_attributes, { payee: "", amount: "" }]

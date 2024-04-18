@@ -1,10 +1,10 @@
 import React from "react";
 import { useAppState } from "../AppState.jsx";
-import { Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-const Users = (props) => {
+const Users = () => {
   const { state, dispatch } = useAppState();
-  const { token, url, users, username } = state;
+  const { token, url, users } = state;
 
   const getUsers = async () => {
     const response = await fetch(url + "/users/", {

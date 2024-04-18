@@ -2,9 +2,9 @@ import React from "react";
 import { useAppState } from "../AppState.jsx";
 import { useParams } from "react-router-dom";
 
-const User = (props) => {
+const User = () => {
   const { state, dispatch } = useAppState();
-  const { token, url, user, username } = state;
+  const { token, url, user } = state;
   const { id } = useParams();
 
   const getUser = async () => {

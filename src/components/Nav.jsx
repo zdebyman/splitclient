@@ -7,7 +7,15 @@ const Nav = (props) => {
 
   return (
     <header>
-      <h1>Split</h1>
+      <div>
+        <h1>Split App</h1>
+        {state.token ? (
+          <>
+            <h2>Hello, {state.username}</h2>
+          </>
+        ) : null}
+      </div>
+
       <nav>
         {!state.token ? (
           <>
@@ -24,10 +32,6 @@ const Nav = (props) => {
         ) : null}
         {state.token ? (
           <>
-            <Link to="/Dashboard">
-              <div>Dashboard</div>
-            </Link>
-
             <Link to="/balances">
               <div>Balances</div>
             </Link>
@@ -37,7 +41,7 @@ const Nav = (props) => {
             </Link>
 
             <Link to="/users">
-              <div>Users</div>
+              <div>All Users</div>
             </Link>
 
             <div

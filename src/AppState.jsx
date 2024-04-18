@@ -5,11 +5,10 @@ import React, { useContext, useReducer } from "react";
 //////////////////////
 
 const initialState = {
-  url: "https://splitbackend-125e8fa10c4d.herokuapp.com/",
-  //url: "http://127.0.0.1:3000",
+  //url: "https://splitbackend-125e8fa10c4d.herokuapp.com/",
+  url: "http://127.0.0.1:3000",
   token: null,
   username: null,
-  notes: null,
 
   new: {
     title: "",
@@ -50,12 +49,12 @@ const reducer = (state, action) => {
       window.localStorage.removeItem("auth");
       return newState;
       break;
-    case "getNotes":
-      newState = { ...state, notes: action.payload };
-      return newState;
-      break;
     case "getUsers":
       newState = { ...state, users: action.payload };
+      return newState;
+      break;
+    case "getBalances":
+      newState = { ...state, balances: action.payload };
       return newState;
       break;
     case "getUser":

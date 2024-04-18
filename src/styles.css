@@ -53,24 +53,3 @@ header nav div:hover {
 }
 
 
-/* /////////////////////////
-Notes Form
-///////////////////////// */
-.form {
-  background-color: greenyellow;
-}
-
-/* /////////////////////////
-DASHBOARD
-///////////////////////// */
-
-.dashboard {
-  text-align: center;
-}
-
-.dashboard .note {
-  text-align: center;
-  width: 90%;
-  margin: 10px auto;
-  border: 3px solid crimson;
-}
