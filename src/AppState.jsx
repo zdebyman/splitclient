@@ -5,8 +5,8 @@ import React, { useContext, useReducer } from "react";
 //////////////////////
 
 const initialState = {
-  //url: "https://splitbackend-125e8fa10c4d.herokuapp.com/",
-  url: "http://127.0.0.1:3000",
+  url: "https://splitbackend-125e8fa10c4d.herokuapp.com/",
+  //url: "http://127.0.0.1:3000",
   token: null,
   username: null,
 
